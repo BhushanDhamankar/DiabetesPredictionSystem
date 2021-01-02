@@ -3,6 +3,6 @@
 ## Home Page:
 ![](home.png)
 ## Form Table:
-![](form.png)
-## Result:
 ![](result.png)
+## Result:
+![](form.png)
