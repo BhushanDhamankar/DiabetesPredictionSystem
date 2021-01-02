@@ -14,7 +14,6 @@ def predict(request):
 def result(request):
  
     data=pd.read_csv(r"C:\Project\Datasets\diabetes.csv")
-    print(data.head())
     X = data.drop("Outcome", axis=1)
     Y = data['Outcome']
 
@@ -32,7 +31,6 @@ def result(request):
     val7 = float(request.GET['n7'])
     val8 = float(request.GET['n8'])
     pred = model.predict([[val1, val2, val3, val4, val5, val6 ,val7, val8]])
-    print(pred)
     if pred==[1]:
         test="Positive"
     else:
